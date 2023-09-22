@@ -1,13 +1,14 @@
+import Button from '../Button/button'
 import './style.css'
 
-function Rowtab({title1,title2,title3,headertable}) {
+function Rowtab({ele,headertable,handelDelete}) {
 
     return (
         <table className={`${headertable?"header-table":"body-table"}`}>
-            <tr>
-                <td>{title1}</td>
-                <td>{title2}</td>
-                <td>{title3}</td>
+            <tr key={ele.id}>
+                <td>{ele.title}</td>
+                <td>{<Button text = {ele.completed ? "completed": "pending"} />}</td>
+                <td onClick={handelDelete}>{<i className="fa-solid fa-trash-can"></i>}</td>
             </tr>
         </table>        
             

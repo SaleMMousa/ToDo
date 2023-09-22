@@ -1,13 +1,12 @@
 
 import './App.css';
-import InputCard from './components/InputCard/input';
-import TodoCard from './components/Todocard/todocard';
+import Homepage from './pages/homepage/home';
+
 
 function App() {
   return (
     <>
-      <InputCard />
-      <TodoCard />
+      <Homepage />
     </>
     
   );
