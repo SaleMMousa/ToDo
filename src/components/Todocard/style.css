@@ -1,5 +1,5 @@
 .card {
-    width: 40%;
+    width: 80%;
     border-radius: 8px;
     background-color: rgb(252, 252, 252);
     margin: 20px auto;
@@ -13,7 +13,7 @@
 }
 i {
     font-size: 14px;
-    color:#e9433a;
-    text-shadow: 0 2px 10px #e9433a;
+    color:#d54b48;
+    text-shadow: 1px 0 5px #d54b48;
     cursor: pointer;
 }

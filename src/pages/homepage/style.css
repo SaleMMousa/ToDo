@@ -1,0 +1,15 @@
+.card-home {
+    width: 60%;
+    border-radius: 8px;
+    background-image:url("../../../public/desktop-wallpaper-simple-color-color-simple-colour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+    padding: 10px 0 30px ;
+    text-align: center;
+    box-shadow: 1px 1px 20px rgb(13, 184, 236);
+}.card-home h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+}
