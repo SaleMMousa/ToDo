@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import InputCard from '../../components/InputCard/input'
 import TodoCard from '../../components/Todocard/todocard'
 import axios from 'axios';
+import './style.css'
 
 function Homepage() {
     const [value,setValue] =useState("");
@@ -29,7 +30,8 @@ function Homepage() {
     },[])
 
     return (
-    <>
+    <div className='card-home'>
+        <h2>TODO List</h2>
         <InputCard 
             value={value} 
             onChange={inpuonChange} 
@@ -38,7 +40,7 @@ function Homepage() {
             setValue={setValue}
         />
         <TodoCard data={data} setData={setData}/>
-    </>  
+    </div>  
     );
 }
 
