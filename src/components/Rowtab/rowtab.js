@@ -3,9 +3,10 @@ import Button from '../Button/button'
 import './style.css'
 
 function Rowtab({ele,headertable,handelDelete}) {
-    const[type,setType] = useState(ele.completed);
+    const[type] = useState(ele.completed);
 
-    return (<>
+    return (
+    <>
         <table className={`${headertable?"header-table":"body-table"}`}>
             <tr key={ele.id}>
                 <td>{ele.title}</td>
@@ -13,7 +14,7 @@ function Rowtab({ele,headertable,handelDelete}) {
                 <td onClick={handelDelete}>{<i className="fa-solid fa-trash-can"></i>}</td>
             </tr>
         </table>        
-        </>        
+    </>        
     )
 }
 
